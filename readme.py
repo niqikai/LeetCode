@@ -261,7 +261,7 @@ class Readme:
 
 def main():
     table = TableInform()
-    table.update_table('leetcode-algorithms')
+    table.update_table('solutions')
 
 
 if __name__ == '__main__':
