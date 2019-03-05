@@ -15,7 +15,7 @@ class Config:
     """
     local_path = '/Users/niqikai/Project/LeetCode'
     # solution of leetcode
-    github_leetcode_url = 'https://github.com/niqikai/LeetCode'
+    github_leetcode_url = 'https://github.com/niqikai/LeetCode/tree/master/solutions'
     # solution of pat,　暂时还没写
     github_pat_url = 'https://github.com/hey-bruce/algorithms_and_oj/blob/master/pat-algorithms/'
     leetcode_url = 'https://leetcode.com/problems/'
@@ -205,7 +205,10 @@ class Readme:
         self.others = others
         self.locked = locked
         self.time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-        self.msg = '# 凡有为的青年，在二三十岁都下过一番苦工\n' \
+        self.msg = '# LeetCode ' \
+                    ' \n'\
+                    '> 凡有为的青年，在二三十岁都下过一番苦工\n' \
+                    '\n'\
                    'Until {}, I have solved **{}** / **{}** problems ' \
                    'while **{}** are still locked.' \
                    '\n\nCompletion statistic: ' \
