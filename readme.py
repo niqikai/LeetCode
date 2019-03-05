@@ -13,9 +13,9 @@ class Config:
     １．　本地仓库的的路径
     ２．　GitHub中的仓库LeetCode解法的路径
     """
-    local_path = '/home/yuan/PycharmProjects/algorithms_and_oj'
+    local_path = '/Users/niqikai/Project/LeetCode'
     # solution of leetcode
-    github_leetcode_url = 'https://github.com/hey-bruce/algorithms_and_oj/blob/master/leetcode-algorithms/'
+    github_leetcode_url = 'https://github.com/niqikai/LeetCode'
     # solution of pat,　暂时还没写
     github_pat_url = 'https://github.com/hey-bruce/algorithms_and_oj/blob/master/pat-algorithms/'
     leetcode_url = 'https://leetcode.com/problems/'
@@ -205,7 +205,7 @@ class Readme:
         self.others = others
         self.locked = locked
         self.time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-        self.msg = '# Keep thinking, keep alive\n' \
+        self.msg = '# 凡有为的青年，在二三十岁都下过一番苦工\n' \
                    'Until {}, I have solved **{}** / **{}** problems ' \
                    'while **{}** are still locked.' \
                    '\n\nCompletion statistic: ' \
