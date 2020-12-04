@@ -7,8 +7,10 @@
  *
  * algorithms
  * Easy (42.90%)
- * Total Accepted:    1.6M
- * Total Submissions: 3.8M
+ * Likes:    10501
+ * Dislikes: 348
+ * Total Accepted:    1.7M
+ * Total Submissions: 3.9M
  * Testcase Example:  '[2,7,11,15]\n9'
  *
  * Given an array of integers, return indices of the two numbers such that they
@@ -29,19 +31,12 @@
  * 
  * 
  */
+
+// @lc code=start
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], i);
-        }
         
-        for (int i = 0; i < nums.length; i++) {
-            if ( map.containsKey( target - nums[i]) && map.get(target - nums[i]) != i ) {
-                return new int[] {i, map.get(target - nums[i])};
-            }
-        }
-        throw new IllegalArgumentException("No two sum solution");
     }
 }
+// @lc code=end
 
